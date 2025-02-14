@@ -96,6 +96,8 @@ footer {
 }
 
 .menu {
-    padding: 50px 200px;
+    padding: 30px 130px;
+    display: flex;
+    justify-content: flex-end;
 }
 
