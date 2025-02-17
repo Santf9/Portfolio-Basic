@@ -21,10 +21,10 @@ body {
 }
 
 .menu {
-    padding: 3% 15%;
+    padding: 3% 20%;
     display: flex;
     justify-content: flex-end;
-    gap: 60px;
+    gap: 50px;
 }
 
 .header-menu {
@@ -33,6 +33,10 @@ body {
     font-size: 1.5rem;
     color: var(--color-terciario);
     text-decoration: none;
+}
+
+.header-menu:hover{
+    color: var(--color-secundario)
 }
 
 .presentacion {
@@ -97,6 +101,7 @@ body {
 
 .enlaces-links:hover {
     background-color: var(--color-hover);
+    color: var(--color-terciario);
     cursor: pointer;
 }
 
@@ -112,6 +117,32 @@ footer {
     font-weight: 400;
     color: var(--color-primario);
     text-align: center;
+}
+
+footer:hover {
+    color: var(--color-secundario);
+    cursor: pointer;
+}
+
+@media (max-width: 1250px) {
+    
+    .presentacion {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .menu {
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .presentacion-contenido {
+        width: auto;
+    }
+
+    .presentacion-contenido-titulo {
+        text-align: center;
+    }
 }
 
 
